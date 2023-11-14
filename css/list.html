@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Lists</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            .nav{
+                width: 100%;
+                text-align: center;
+            }
+            .nav ul{
+                list-style-type: none;
+            }
+            .nav ul li{
+                display: inline;
+                border-right: 1px solid black;
+                padding-right: 5px;
+            }
+            .nav a{
+                text-decoration: none;
+                color:black;
+                text-transform: uppercase;
+            }
+            .nav a:hover{
+                color:gray;
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li style="border:0px;"><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+</body>
+</html>
