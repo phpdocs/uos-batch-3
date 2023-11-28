@@ -4,50 +4,119 @@
     <title>EnvSight.COM </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7880c1f3fa.js" crossorigin="anonymous"></script>
+    <!--Google Fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!--Google Fonts End-->
     <style>
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+
         .text-justify{
             text-align: justify;
         }
+        
+        .custom-main-nav{
+            text-transform: uppercase;
+            font-size:21px;
+        }
+        .custom-main-nav li{
+            margin-right:20px;
+        }
+
+        .border-custom-color{
+            
+            border-color: #2ecc71 !important;
+            
+        }
+
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <!--Nav Area Start-->
-        <div class="row">
-            <div class="col-12 border border-danger">
-                <h1 class="text-uppercase">Nav Bar Row</h1>
-            </div>
-        </div>
-        <!--Nav Area End-->
+    <!--Nav Start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" style="width: 50%;" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center w-75" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 custom-main-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Vision</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact US</a>
+              </li>
+            </ul>
+          </div>
 
+
+          <div class="collapse navbar-collapse justify-content-end w-25" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Nav End-->
+    <div class="container-fluid">
         <!--Slider Area Start-->
-        <div class="row border border-primary">
-            <div class="col-12">
-                <h1 class="text-uppercase">Slider Area</h1>
+        <div class="row custom-slider">
+            <div class="col-12 text-center">
+                <img src="images/slider.jpg" class="img-fluid" />
             </div>
         </div>
         <!--Slider Area End-->
 
         <!--Features Section Start-->
-        <section id="features" class="border border-danger ">
-            <div class="row">
+        <section id="features">
+            <div class="row mb-3">
                 <div class="col-12 text-center">
                     <h1 class="text-uppercase">Top Features</h1>
                 </div>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 border border-primary">
-                    <h1>Icon 1</h1>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 border border-custom-color rounded py-3 text-center me-5">
+                    <i class="fa-solid fa-sack-dollar fa-7x"></i>
+                    <h3>Low Cost</h3>
                 </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 border border-primary">
-                    <h1>Icon 1</h1>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 border border-custom-color rounded py-3 text-center me-5">
+                    <i class="fa-solid fa-gear fa-7x"></i>
+                    <h3>Easy to Setup</h3>
                 </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 border border-primary">
-                    <h1>Icon 1</h1>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 border border-custom-color rounded py-3 text-center me-5">
+                    <i class="fa-brands fa-github fa-7x"></i>
+                    <h3>Open Source</h3>
                 </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 border border-primary">
-                    <h1>Icon 1</h1>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 border border-custom-color rounded py-3 text-center me-5">
+                    <i class="fa-solid fa-code fa-7x"></i>
+                    <h3>Arduino Based</h3>
                 </div>
             </div>
         </section>
