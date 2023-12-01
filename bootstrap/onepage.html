@@ -39,7 +39,13 @@
         p{
             font-size:20px;
         }
-
+        .light-bg
+        {
+          background-color: #ecf0f1;
+        }
+        .white-bg{
+          background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -160,7 +166,7 @@
         <!--Features Section End-->
 
         <!--About US Section Start-->
-        <section id="about-us" class="mt-5">
+        <section id="about-us" class="mt-5 light-bg">
             <div class="row pt-5 pb-2 mb-2">
                 <div class="col-12 text-center">
                     <h1 class="text-uppercase">About US</h1>
@@ -227,8 +233,8 @@
         <!--Silent Features End-->
 
         <!--Our vision Section Start-->
-        <section id="our-vision" class="my-5">
-            <div class="row justify-content-center border py-5">
+        <section id="our-vision" class="my-5 light-bg">
+            <div class="row justify-content-center py-5">
                 <div class="col-12 col-md-6 col-lg-5 text-center">
                     <img src="images/our-vision-1.png" class="h-75" />
                 </div>
@@ -264,19 +270,20 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-5 text-center ">
+                  <h1>Send us a Message</h1>
                       <form>
                         <div class="row">
                           <div class="col-10 mb-2">
-                            <input type="text" required  name="txtname" placeholder="Full Name" class="form-control" />
+                            <input type="text" required  name="txtname" placeholder="Full Name" class="form-control-lg form-control" />
                           </div>
                           <div class="col-5 mb-2">
-                            <input type="email" required  name="txtemail" placeholder="Email Address" class="form-control" />
+                            <input type="email" required  name="txtemail" placeholder="Email Address" class="form-control form-control-lg" />
                           </div>
                           <div class="col-5 mb-2">
-                            <input type="tel" required  name="textPhone" placeholder="Phone#" class="form-control" />
+                            <input type="tel" required  name="textPhone" placeholder="Phone#" class="form-control form-control-lg" />
                           </div>
                           <div class="col-10 mb-2">
-                            <input type="text" required  name="textSubject" placeholder="Subject" class="form-control" />
+                            <input type="text" required  name="textSubject" placeholder="Subject" class="form-control form-control-lg" />
                           </div>
                           <div class="col-10 mb-2 text-start">
                             <input type="radio" class="form-check-input" name="rdCustomer" id="rdCustomer1" value="already-customer" />
@@ -297,22 +304,22 @@
                         
                       </form>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 text-center border">
+                <div class="col-12 col-md-6 col-lg-5 text-center">
                     <h1>Join Our Community</h1>
                     <div class="row justify-content-center mb-5">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-5 border border-dark me-5 rounded">
-                            <a class="nav-link" href="#"><i class="fa-brands fa-facebook fa-7x"></i></a>
+                            <a class="nav-link py-4" href="#"><i class="fa-brands fa-facebook fa-7x"></i></a>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-5 border border-dark  rounded">
-                          <a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-7x"></i></a>
+                          <a class="nav-link py-4" href="#"><i class="fa-brands fa-twitter fa-7x"></i></a>
                         </div>
                     </div>
                   <div class="row justify-content-center">
                       <div class="col-12 col-sm-12 col-md-6 col-lg-5 border border-dark me-5 rounded">
-                          <a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-7x"></i></a>
+                          <a class="nav-link py-4" href="#"><i class="fa-brands fa-youtube fa-7x"></i></a>
                       </div>
                       <div class="col-12 col-sm-12 col-md-6 col-lg-5 border border-dark rounded">
-                        <a class="nav-link" href="#"><i class="fa-brands fa-linkedin fa-7x"></i></a>
+                        <a class="nav-link py-4" href="#"><i class="fa-brands fa-linkedin fa-7x"></i></a>
                       </div>
                   </div>
                 
@@ -322,21 +329,41 @@
         <!--Contact Us Section End-->
 
         <!--Footer Social Media Icons Start-->
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center border border-danger me-5">
-                <h1>Icon 1</h1>
+        <div class="row justify-content-center light-bg py-5" >
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center border border-dark rounded me-5 white-bg">
+              <i class="fa-solid fa-street-view fa-5x pt-3"></i>
+              <h4 class="pt-1 text-uppercase">Location</h4>
+              <p class="pb-3">University of Sargodha</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center border border-danger me-5">
-                <h1>Icon 2</h1>
+            
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center border border-dark rounded me-5 white-bg">
+              <i class="fa-solid fa-at fa-5x pt-3"></i>
+              
+              <h4 class="pt-1 text-uppercase">Email</h4>
+              <p class="pb-3">info@evnsight.com</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center border border-danger me-5">
-                <h1>Icon 3</h1>
+
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center border border-dark rounded me-5 white-bg">
+              <i class="fa-solid fa-headset fa-5x pt-3"></i>
+              <h4 class="pt-1 text-uppercase">Phone#</h4>
+              <p class="pb-3">+92 321 1234567</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center border border-danger">
-                <h1>Icon 4</h1>
+
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2 text-center border border-dark rounded me-5 white-bg">
+              <i class="fa-solid fa-business-time fa-5x pt-3"></i>
+              <h4 class="pt-1 text-uppercase">Open Hours</h4>
+              <p class="pb-3">9:00 AM - 5:00 PM (GMT+5)</p>
             </div>
         </div>
         <!--Footer Social Media Icons End-->
+
+        <!--Footer Section Start-->
+        <div class="row">
+          <div class="col-12 text-center py-3">
+            <p class="text-uppercase">Copyright &copy; 2000-1998 EnvSight.com</p>
+          </div>
+        </div>
+        <!--Footer Section End-->
 
 
     </div>
